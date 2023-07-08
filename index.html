@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+    <!-- style section -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* overflow: none; */
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body::-webkit-scrollbar{
+            display: none;
+        }
+        form{
+            padding: 20px;
+            border: 2px solid black;
+            text-align: center;
+        }
+        #submit{
+            padding: 4px 8px;
+            cursor: pointer;
+        }
+        label{
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- form section -->
+    <form action="https://formspree.io/f/xyyqyelr" method="post">
+        <!-- name input -->
+      <label for="name">Name</label>&nbsp;&nbsp;
+      <input type="text" id="name" placeholder="Enter your name" name="name" required />
+      <br /><br />
+      <label for="email">Email</label>&nbsp;&nbsp;
+      <input type="email" id="email" placeholder="Enter your email" name="email" required />
+      <br /><br />
+      <!-- passowrd input -->
+      <label for="password">Password</label>&nbsp;&nbsp;
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter your password"
+        required
+        name="passowrd"
+      />
+      <br /><br />
+      <!-- stream input -->
+      <label for="strem">Select your stream:</label>&nbsp;&nbsp;
+      <select name="strem" id="stream" required>
+        <option value="CSE">CSE</option>
+        <option value="CSE(AI & ML)">CSE(AI & ML)</option>
+        <option value="CSE(D SC)">CSE(D SC)</option>
+        <option value="CSE(IOT)">CSE(IOT)</option>
+        <option value="CSE(CS)">CSE(CS)</option>
+        <option value="CSBS">CSBS</option>
+        <option value="EE">EE</option>
+        <option value="IT">IT</option>
+        <option value="CE">CE</option>
+        <option value="ECE">ECE</option>
+        <option value="ME">ME</option>
+        <option value="BSH">BSH</option>
+      </select>
+      <br /><br />
+      <!-- year input -->
+      <hr>
+      <br />
+      <h3>Select Your Year</h3>
+      <br />
+      <input type="radio" id="1styear" name="year" value="1st year" required />&nbsp;
+      <label for="1styear">1st year</label>
+      <br>
+      <input type="radio" id="2ndyear" name="year" value="2nd year" required />&nbsp;
+      <label for="2ndyear">2nd year</label>
+      <br>
+      <input type="radio" id="3rdyear" name="year" value="3rd year" required />&nbsp;
+      <label for="3rdyear">3rd year</label>
+      <br>
+      <input type="radio" id="4thyear" name="year" value="4th year" required />&nbsp;
+      <label for="4thyear">4th year</label>
+      <br /><br />
+      <!-- semester input -->
+      <hr>
+      <br />
+      <h3>Select Your Semester</h3>
+      <br />
+      <input type="radio" id="1stsem" name="sem" value="1st sem" required />&nbsp;
+      <label for="1stsem">1st sem</label>
+      <br>
+      <input type="radio" id="2ndsem" name="sem" value="2nd sem" required />&nbsp;
+      <label for="2ndsem">2nd sem</label>
+      <br>
+      <input type="radio" id="3rdsem" name="sem" value="3rd sem" required />&nbsp;
+      <label for="3rdsem">3rd sem</label>
+      <br>
+      <input type="radio" id="4thsem" name="sem" value="4th sem" required />&nbsp;
+      <label for="4thsem">4th sem</label>
+      <br>
+      <input type="radio" id="5thsem" name="sem" value="5th sem" required />&nbsp;
+      <label for="5thsem">5th sem</label>
+      <br>
+      <input type="radio" id="6thsem" name="sem" value="6th sem" required />&nbsp;
+      <label for="6thsem">6th sem</label>
+      <br>
+      <input type="radio" id="7thsem" name="sem" value="7th sem" required />&nbsp;
+      <label for="7thsem">7th sem</label>
+      <br>
+      <input type="radio" id="8thsem" name="sem" value="8th sem" required />&nbsp;
+      <label for="8thsem">8th sem</label>
+      <br>
+      <!-- submit button -->
+      <br>
+      <input type="submit" value="Register" id="submit">
+    </form>
+  </body>
+</html>
